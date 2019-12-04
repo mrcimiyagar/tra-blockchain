@@ -1,0 +1,25 @@
+image: node:10
+
+cache:
+  paths:
+  - node_modules
+
+stages:
+- deploy
+
+pages:
+  stage: deploy
+  script:
+    - npm config set '@bit:registry' https://node.bit.dev
+    - npm install
+    - CI=false npm run build
+    - rm -rf public
+    - mkdir public
+    - cp -r -a  build/. public/
+    - cd public/static/js
+    - dir
+  artifacts:
+    paths:
+    - public
+  only:
+    - master

@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={""}>
     <App />
   </BrowserRouter>,
   rootElement);

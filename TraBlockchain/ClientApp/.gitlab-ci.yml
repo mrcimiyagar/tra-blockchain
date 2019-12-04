@@ -19,7 +19,7 @@ pages:
     - cd ..
     - mkdir public
     - cp -r -a  TraBlockchain/ClientApp/build/. public/
-    - cd public/static/js
+    - cd public
   artifacts:
     paths:
     - public

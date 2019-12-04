@@ -15,12 +15,13 @@ pages:
     - npm install
     - CI=false npm run build
     - rm -rf public
+    - cd ..
+    - cd ..
     - mkdir public
-    - cp -r -a  build/. public/
+    - cp -r -a  TraBlockchain/ClientApp/build/. public/
     - cd public/static/js
-    - dir
   artifacts:
     paths:
-    - TraBlockchain/ClientApp/public
+    - public
   only:
     - master

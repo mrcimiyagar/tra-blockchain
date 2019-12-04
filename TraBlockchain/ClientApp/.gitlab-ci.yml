@@ -2,7 +2,7 @@ image: node:10
 
 cache:
   paths:
-  - node_modules
+  - TraBlockchain/ClientApp/node_modules
 
 stages:
 - deploy
@@ -21,6 +21,6 @@ pages:
     - dir
   artifacts:
     paths:
-    - public
+    - TraBlockchain/ClientApp/public
   only:
     - master

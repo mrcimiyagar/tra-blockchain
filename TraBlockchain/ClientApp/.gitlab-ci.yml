@@ -12,6 +12,8 @@ pages:
   script:
     - npm config set '@bit:registry' https://node.bit.dev
     - npm install
+    - dir
+    - cd TraBlockchain/ClientApp
     - CI=false npm run build
     - rm -rf public
     - mkdir public

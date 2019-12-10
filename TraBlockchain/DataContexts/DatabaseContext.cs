@@ -7,6 +7,7 @@ namespace TraBlockchain
     {
         private DbSet<User> Users { get; set; }
         
+        // I FUCKIN DID IT!
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql("Host=localhost:5432;Database=TraBlockchain;Username=postgres;Password=pouya258");
 

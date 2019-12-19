@@ -23,7 +23,7 @@ namespace TraBlockchain.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("weatherlist")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -34,6 +34,12 @@ namespace TraBlockchain.Controllers
                     Summary = Summaries[rng.Next(Summaries.Length)]
                 })
                 .ToArray();
+        }
+
+        [HttpGet]
+        public string getShit()
+        {
+            return "shit";
         }
     }
 }

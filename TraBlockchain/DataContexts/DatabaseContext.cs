@@ -5,7 +5,7 @@ namespace TraBlockchain
 {
     public class DatabaseContext: DbContext
     {
-        private DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         
         // I FUCKIN DID IT!
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

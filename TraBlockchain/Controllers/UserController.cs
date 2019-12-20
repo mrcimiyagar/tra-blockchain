@@ -28,7 +28,7 @@ namespace TraBlockchain.Controllers
         //response from the database
         
        [HttpGet("userlist")]
-        public async  Task<ActionResult<IEnumerable<User>>> UsersList()
+        public async Task<ActionResult<IEnumerable<User>>> UsersList()
         {
             var users = await _context.Users.ToListAsync();
             return Ok(users);
@@ -38,7 +38,7 @@ namespace TraBlockchain.Controllers
         public async Task<ActionResult<User>> UserInfo(int id)
         {
             var user = await _context.Users.FindAsync(id);
-            return user;
+            return Ok(user);
         }
  
         // 

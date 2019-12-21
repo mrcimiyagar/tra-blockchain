@@ -23,8 +23,7 @@ namespace TraBlockchain
         {
             services.AddControllersWithViews();
             
-            //adding database as a service
-            services.AddDbContext<DatabaseContext>();
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/build"; });
         }

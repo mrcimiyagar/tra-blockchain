@@ -92,6 +92,11 @@
         <e p="Controllers" t="Include">
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
+        <e p="Core" t="Include">
+          <e p="EogenVirtualMachine" t="Include" />
+          <e p="output.tra" t="Include" />
+          <e p="sample.tracode" t="Include" />
+        </e>
         <e p="DataContexts" t="Include">
           <e p="DatabaseContext.cs" t="Include" />
         </e>

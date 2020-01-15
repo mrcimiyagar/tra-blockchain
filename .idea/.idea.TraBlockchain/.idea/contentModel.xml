@@ -1,62 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_TraBlockchain.-1506064306.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\Jigsaw\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Jigsaw\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Jigsaw\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jigsaw\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TraBlockchain.1070837489.00" t="ExcludeRecursive" />
+    <e p="P:\LastTerm\Internet Engineering\blockchain\blockchain" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
       <e p="TraBlockchain" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
-        <e p="ClientApp/node_modules/@babel/parser" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@babel/types" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@emotion/is-prop-valid" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@jest/console" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@jest/fake-timers" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@jest/source-map" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@jest/test-result" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@jest/types" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@popmotion/easing" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@popmotion/popcorn" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/@types" t="IncludeRecursive">
-          <e p="babel__generator" t="IncludeRecursive" />
-          <e p="babel__template" t="IncludeRecursive" />
-          <e p="babel__traverse" t="IncludeRecursive" />
-          <e p="istanbul-lib-coverage" t="IncludeRecursive" />
-          <e p="istanbul-lib-report" t="IncludeRecursive" />
-          <e p="node" t="IncludeRecursive" />
-          <e p="unist" t="IncludeRecursive" />
-          <e p="vfile-message" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ClientApp" t="Include">
+          <e p="node_modules\@babel\parser" t="IncludeRecursive" />
+          <e p="node_modules\@babel\types" t="IncludeRecursive" />
+          <e p="node_modules\@emotion\is-prop-valid" t="IncludeRecursive" />
+          <e p="node_modules\@jest\console" t="IncludeRecursive" />
+          <e p="node_modules\@jest\fake-timers" t="IncludeRecursive" />
+          <e p="node_modules\@jest\source-map" t="IncludeRecursive" />
+          <e p="node_modules\@jest\test-result" t="IncludeRecursive" />
+          <e p="node_modules\@jest\types" t="IncludeRecursive" />
+          <e p="node_modules\@popmotion\easing" t="IncludeRecursive" />
+          <e p="node_modules\@popmotion\popcorn" t="IncludeRecursive" />
+          <e p="node_modules\@types" t="IncludeRecursive">
+            <e p="babel__generator" t="IncludeRecursive" />
+            <e p="babel__template" t="IncludeRecursive" />
+            <e p="babel__traverse" t="IncludeRecursive" />
+            <e p="istanbul-lib-coverage" t="IncludeRecursive" />
+            <e p="istanbul-lib-report" t="IncludeRecursive" />
+            <e p="node" t="IncludeRecursive" />
+            <e p="unist" t="IncludeRecursive" />
+            <e p="vfile-message" t="IncludeRecursive" />
+          </e>
+          <e p="node_modules\babel-jest" t="IncludeRecursive" />
+          <e p="node_modules\chalk" t="IncludeRecursive" />
+          <e p="node_modules\delay" t="IncludeRecursive" />
+          <e p="node_modules\dotenv-expand" t="IncludeRecursive" />
+          <e p="node_modules\framesync" t="IncludeRecursive" />
+          <e p="node_modules\hey-listen" t="IncludeRecursive" />
+          <e p="node_modules\jest" t="IncludeRecursive" />
+          <e p="node_modules\jest-haste-map" t="IncludeRecursive" />
+          <e p="node_modules\jest-message-util" t="IncludeRecursive" />
+          <e p="node_modules\jest-mock" t="IncludeRecursive" />
+          <e p="node_modules\jest-resolve" t="IncludeRecursive" />
+          <e p="node_modules\jest-serializer" t="IncludeRecursive" />
+          <e p="node_modules\jest-util" t="IncludeRecursive" />
+          <e p="node_modules\jest-worker" t="IncludeRecursive" />
+          <e p="node_modules\node-sass" t="IncludeRecursive" />
+          <e p="node_modules\popmotion" t="IncludeRecursive" />
+          <e p="node_modules\popmotion-pose" t="IncludeRecursive" />
+          <e p="node_modules\pose-core" t="IncludeRecursive" />
+          <e p="node_modules\react" t="IncludeRecursive" />
+          <e p="node_modules\react-dom" t="IncludeRecursive" />
+          <e p="node_modules\react-pose" t="IncludeRecursive" />
+          <e p="node_modules\react-scripts" t="IncludeRecursive" />
+          <e p="node_modules\react-spring" t="IncludeRecursive" />
+          <e p="node_modules\realpath-native" t="IncludeRecursive" />
+          <e p="node_modules\source-map" t="IncludeRecursive" />
+          <e p="node_modules\style-value-types" t="IncludeRecursive" />
+          <e p="node_modules\stylefire" t="IncludeRecursive" />
+          <e p="node_modules\ts-essentials" t="IncludeRecursive" />
+          <e p="node_modules\tslib" t="IncludeRecursive" />
+          <e p="node_modules\worker-farm" t="IncludeRecursive" />
+          <e p="package-lock.json" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="public" t="Include">
+            <e p="favicon.ico" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="manifest.json" t="Include" />
+          </e>
+          <e p="src" t="Include">
+            <e p="App.jsx" t="Include" />
+            <e p="App.scss" t="Include" />
+            <e p="App.test.js" t="Include" />
+            <e p="components" t="Include">
+              <e p="login" t="Include">
+                <e p="index.jsx" t="Include" />
+                <e p="login.jsx" t="Include" />
+                <e p="register.jsx" t="Include" />
+                <e p="style.scss" t="Include" />
+              </e>
+            </e>
+            <e p="index.css" t="Include" />
+            <e p="index.js" t="Include" />
+            <e p="login.svg" t="Include" />
+            <e p="logo.svg" t="Include" />
+            <e p="serviceWorker.js" t="Include" />
+          </e>
         </e>
-        <e p="ClientApp/node_modules/babel-jest" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/chalk" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/delay" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/dotenv-expand" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/framesync" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/hey-listen" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-haste-map" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-message-util" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-mock" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-resolve" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-serializer" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-util" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/jest-worker" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/node-sass" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/popmotion" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/popmotion-pose" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/pose-core" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/react" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/react-dom" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/react-pose" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/react-scripts" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/react-spring" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/realpath-native" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/source-map" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/style-value-types" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/stylefire" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/ts-essentials" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/tslib" t="IncludeRecursive" />
-        <e p="ClientApp/node_modules/worker-farm" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
@@ -71,10 +103,17 @@
         <e p="Entities" t="Include">
           <e p="User.cs" t="Include" />
         </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="TraBlockchain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
           <e p="Error.cshtml" t="Include" />
           <e p="Error.cshtml.cs" t="Include" />
-          <e p="_ViewImports.cshtml" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -83,19 +122,8 @@
         <e p="Startup.cs" t="Include" />
         <e p="TraBlockchain.csproj" t="IncludeRecursive" />
         <e p="WeatherForecast.cs" t="Include" />
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.0" t="Include">
-              <e p="TraBlockchain.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
       </e>
       <e p="TraBlockchain.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

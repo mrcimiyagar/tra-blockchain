@@ -13,36 +13,32 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ClientApp" t="Include">
-          <e p=".gitignore" t="Include" />
-          <e p=".gitlab-ci.yml" t="Include" />
           <e p="node_modules\@babel\parser" t="IncludeRecursive" />
           <e p="node_modules\@babel\types" t="IncludeRecursive" />
+          <e p="node_modules\@emotion\is-prop-valid" t="IncludeRecursive" />
           <e p="node_modules\@jest\console" t="IncludeRecursive" />
           <e p="node_modules\@jest\fake-timers" t="IncludeRecursive" />
           <e p="node_modules\@jest\source-map" t="IncludeRecursive" />
           <e p="node_modules\@jest\test-result" t="IncludeRecursive" />
           <e p="node_modules\@jest\types" t="IncludeRecursive" />
+          <e p="node_modules\@popmotion\easing" t="IncludeRecursive" />
+          <e p="node_modules\@popmotion\popcorn" t="IncludeRecursive" />
           <e p="node_modules\@types" t="IncludeRecursive">
             <e p="babel__generator" t="IncludeRecursive" />
             <e p="babel__template" t="IncludeRecursive" />
             <e p="babel__traverse" t="IncludeRecursive" />
             <e p="istanbul-lib-coverage" t="IncludeRecursive" />
             <e p="istanbul-lib-report" t="IncludeRecursive" />
+            <e p="node" t="IncludeRecursive" />
+            <e p="unist" t="IncludeRecursive" />
+            <e p="vfile-message" t="IncludeRecursive" />
           </e>
-          <e p="node_modules\ajv" t="IncludeRecursive" />
-          <e p="node_modules\babel-eslint" t="IncludeRecursive" />
           <e p="node_modules\babel-jest" t="IncludeRecursive" />
-          <e p="node_modules\bootstrap" t="IncludeRecursive" />
           <e p="node_modules\chalk" t="IncludeRecursive" />
-          <e p="node_modules\cross-env" t="IncludeRecursive" />
+          <e p="node_modules\delay" t="IncludeRecursive" />
           <e p="node_modules\dotenv-expand" t="IncludeRecursive" />
-          <e p="node_modules\eslint" t="IncludeRecursive" />
-          <e p="node_modules\eslint-config-react-app" t="IncludeRecursive" />
-          <e p="node_modules\eslint-plugin-flowtype" t="IncludeRecursive" />
-          <e p="node_modules\eslint-plugin-import" t="IncludeRecursive" />
-          <e p="node_modules\eslint-plugin-jsx-a11y" t="IncludeRecursive" />
-          <e p="node_modules\eslint-plugin-react" t="IncludeRecursive" />
-          <e p="node_modules\fast-deep-equal" t="IncludeRecursive" />
+          <e p="node_modules\framesync" t="IncludeRecursive" />
+          <e p="node_modules\hey-listen" t="IncludeRecursive" />
           <e p="node_modules\jest" t="IncludeRecursive" />
           <e p="node_modules\jest-haste-map" t="IncludeRecursive" />
           <e p="node_modules\jest-message-util" t="IncludeRecursive" />
@@ -51,19 +47,21 @@
           <e p="node_modules\jest-serializer" t="IncludeRecursive" />
           <e p="node_modules\jest-util" t="IncludeRecursive" />
           <e p="node_modules\jest-worker" t="IncludeRecursive" />
-          <e p="node_modules\jquery" t="IncludeRecursive" />
-          <e p="node_modules\merge" t="IncludeRecursive" />
-          <e p="node_modules\oidc-client" t="IncludeRecursive" />
+          <e p="node_modules\node-sass" t="IncludeRecursive" />
+          <e p="node_modules\popmotion" t="IncludeRecursive" />
+          <e p="node_modules\popmotion-pose" t="IncludeRecursive" />
+          <e p="node_modules\pose-core" t="IncludeRecursive" />
           <e p="node_modules\react" t="IncludeRecursive" />
           <e p="node_modules\react-dom" t="IncludeRecursive" />
-          <e p="node_modules\react-router-bootstrap" t="IncludeRecursive" />
-          <e p="node_modules\react-router-dom" t="IncludeRecursive" />
+          <e p="node_modules\react-pose" t="IncludeRecursive" />
           <e p="node_modules\react-scripts" t="IncludeRecursive" />
-          <e p="node_modules\reactstrap" t="IncludeRecursive" />
+          <e p="node_modules\react-spring" t="IncludeRecursive" />
           <e p="node_modules\realpath-native" t="IncludeRecursive" />
-          <e p="node_modules\rimraf" t="IncludeRecursive" />
           <e p="node_modules\source-map" t="IncludeRecursive" />
-          <e p="node_modules\uri-js" t="IncludeRecursive" />
+          <e p="node_modules\style-value-types" t="IncludeRecursive" />
+          <e p="node_modules\stylefire" t="IncludeRecursive" />
+          <e p="node_modules\ts-essentials" t="IncludeRecursive" />
+          <e p="node_modules\tslib" t="IncludeRecursive" />
           <e p="node_modules\worker-farm" t="IncludeRecursive" />
           <e p="package-lock.json" t="Include" />
           <e p="package.json" t="Include" />
@@ -72,21 +70,23 @@
             <e p="index.html" t="Include" />
             <e p="manifest.json" t="Include" />
           </e>
-          <e p="README.md" t="Include" />
           <e p="src" t="Include">
-            <e p="App.js" t="Include" />
+            <e p="App.jsx" t="Include" />
+            <e p="App.scss" t="Include" />
             <e p="App.test.js" t="Include" />
             <e p="components" t="Include">
-              <e p="Counter.js" t="Include" />
-              <e p="FetchData.js" t="Include" />
-              <e p="Home.js" t="Include" />
-              <e p="Layout.js" t="Include" />
-              <e p="NavMenu.css" t="Include" />
-              <e p="NavMenu.js" t="Include" />
+              <e p="login" t="Include">
+                <e p="index.jsx" t="Include" />
+                <e p="login.jsx" t="Include" />
+                <e p="register.jsx" t="Include" />
+                <e p="style.scss" t="Include" />
+              </e>
             </e>
-            <e p="custom.css" t="Include" />
+            <e p="index.css" t="Include" />
             <e p="index.js" t="Include" />
-            <e p="registerServiceWorker.js" t="Include" />
+            <e p="login.svg" t="Include" />
+            <e p="logo.svg" t="Include" />
+            <e p="serviceWorker.js" t="Include" />
           </e>
         </e>
         <e p="Controllers" t="Include">

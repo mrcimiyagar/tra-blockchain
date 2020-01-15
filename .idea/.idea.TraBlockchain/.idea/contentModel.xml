@@ -33,6 +33,7 @@
             <e p="unist" t="IncludeRecursive" />
             <e p="vfile-message" t="IncludeRecursive" />
           </e>
+          <e p="node_modules\axios" t="IncludeRecursive" />
           <e p="node_modules\babel-jest" t="IncludeRecursive" />
           <e p="node_modules\chalk" t="IncludeRecursive" />
           <e p="node_modules\delay" t="IncludeRecursive" />

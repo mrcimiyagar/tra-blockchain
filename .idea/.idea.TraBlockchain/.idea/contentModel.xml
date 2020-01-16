@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Jigsaw\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Jigsaw\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Jigsaw\.Rider2019.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Jigsaw\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Jigsaw\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TraBlockchain.1070837489.00" t="ExcludeRecursive" />
     <e p="P:\LastTerm\Internet Engineering\blockchain\blockchain" t="IncludeFlat">
@@ -91,8 +92,8 @@
           </e>
         </e>
         <e p="Controllers" t="Include">
+          <e p="ClientController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
-          <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="Core" t="Include">
           <e p="EogenVirtualMachine" t="Include" />
@@ -132,7 +133,6 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="TraBlockchain.csproj" t="IncludeRecursive" />
-        <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="TraBlockchain.sln" t="IncludeFlat" />
     </e>

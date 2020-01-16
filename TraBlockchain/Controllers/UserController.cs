@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -16,20 +18,33 @@ namespace TraBlockchain.Controllers
        [HttpGet("~/api/user")]
         public async Task<ActionResult<IEnumerable<User>>> GetUsersList()
         {
-            using (var dbContext = new DatabaseContext()) 
+            await using (var dbContext = new DatabaseContext()) 
             {
                 var users = await dbContext.Users.ToListAsync();
                 return Ok(users);
             }
         }
         
-        [HttpGet("~/api/user/{id}")]
-        public async Task<ActionResult<User>> FindUserById(int id)
+        [HttpPost("~/api/loginuser")]
+        public async Task<ActionResult<User>> FindUser(User user)
         {
-            using (var dbContext = new DatabaseContext()) 
+            Console.WriteLine("uUSSAAS" + user.Name);
+            await using (var dbContext = new DatabaseContext()) 
             {
-                var user = await dbContext.Users.FindAsync(id);
-                return Ok(user);
+                var query = await dbContext.Users
+                    .Where(u => u.Name == user.Name)
+                    .FirstOrDefaultAsync();
+                
+                if ( query != null && query.Password.Equals(user.Password))
+                {
+                   
+                    return Ok(user);
+                }
+                else
+                {
+                    Console.WriteLine("name of user is" + user.Name);
+                    return Ok(user.Name);
+                }
             }
         }
     }

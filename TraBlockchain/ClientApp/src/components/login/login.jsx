@@ -1,17 +1,26 @@
 import React from "react";
 import loginImg from "../../login.svg";
+import Axios from "axios";
 
 export class Login extends React.Component {
+  params;
+  
   constructor(props) {
     super(props);
   }
 
-  handleData(){
-    
+  async handleData() {
+
     var username = document.getElementsByName("username")
-    var password =  document.getElementsByName("password")
-    console.log(username)
-    console.log(password)
+    var password = document.getElementsByName("password")
+
+    this.params = {
+      username,
+      password
+    }
+
+    await axios.post('http://localhost:5500/userlogin/', this.params)
+    
     
   }
   render() {

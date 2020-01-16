@@ -46,6 +46,11 @@ namespace TraBlockchain
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
+            using (var dbContext = new DatabaseContext())
+             {
+                dbContext.Database.EnsureCreated();
+            }
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

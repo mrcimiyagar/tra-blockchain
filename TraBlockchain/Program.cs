@@ -18,7 +18,7 @@ namespace TraBlockchain
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://*:8080")
+                .UseUrls("http://*:5500")
                 .UseStartup<Startup>();
     }
 }

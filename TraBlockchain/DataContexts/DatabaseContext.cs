@@ -10,7 +10,7 @@ namespace TraBlockchain
         
         //Using Postgres as DBMS
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=localhost;Database=TraBlockchain;Username=postgres;Password=pouya258");
+            => optionsBuilder.UseNpgsql("Host=localhost;Database=TraBlockchain;Username=postgres;Password=3g5h165tsK65j1s564L69ka5R168kk37sut5ls3Sk2t");
 
 
         //Did it Code-First

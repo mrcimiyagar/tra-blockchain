@@ -6,6 +6,14 @@ export class Login extends React.Component {
     super(props);
   }
 
+  handleData(){
+    
+    var username = document.getElementsByName("username")
+    var password =  document.getElementsByName("password")
+    console.log(username)
+    console.log(password)
+    
+  }
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
@@ -21,12 +29,12 @@ export class Login extends React.Component {
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" placeholder="password" />
+              <input type="password" name="password"  placeholder="password" />
             </div>
           </div>
         </div>
         <div className="footer">
-          <button type="button" className="btn">
+          <button type="button" className="btn" onClick={this.handleData}>
             Login
           </button>
         </div>

@@ -13,37 +13,24 @@ namespace TraBlockchain.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly DatabaseContext _context;
-        private readonly ILogger<UserController> _logger;
-
-        UserController(DatabaseContext context, ILogger<UserController> logger)
+       [HttpGet("~/api/user")]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsersList()
         {
-            _context = context;
-            _logger = logger;
-        }
-        // GET: /HelloWorld/
-       
-
-        // the reason we use async method is to avoid blocking the main thread request. pass the request to a different thread an await 
-        //response from the database
-        
-       [HttpGet("userlist")]
-        public async Task<ActionResult<IEnumerable<User>>> UsersList()
-        {
-            var users = await _context.Users.ToListAsync();
-            return Ok(users);
+            using (var dbContext = new DatabaseContext()) 
+            {
+                var users = await dbContext.Users.ToListAsync();
+                return Ok(users);
+            }
         }
         
-        [HttpGet("userinfo/{id}")]
-        public async Task<ActionResult<User>> UserInfo(int id)
+        [HttpGet("~/api/user/{id}")]
+        public async Task<ActionResult<User>> FindUserById(int id)
         {
-            var user = await _context.Users.FindAsync(id);
-            return Ok(user);
+            using (var dbContext = new DatabaseContext()) 
+            {
+                var user = await dbContext.Users.FindAsync(id);
+                return Ok(user);
+            }
         }
- 
-        // 
-        // GET: /HelloWorld/Welcome/ 
- 
-
     }
 }

@@ -25,26 +25,37 @@ namespace TraBlockchain.Controllers
             }
         }
         
+        
+        
         [HttpPost("~/api/loginuser")]
-        public async Task<ActionResult<User>> FindUser(User user)
+        public async Task<ActionResult<User>> LoginUser(LoginModel model)
         {
-            Console.WriteLine("uUSSAAS" + user.Name);
+          
             await using (var dbContext = new DatabaseContext()) 
             {
                 var query = await dbContext.Users
-                    .Where(u => u.Name == user.Name)
+                    .Where(u => u.Name == model.Name)
                     .FirstOrDefaultAsync();
                 
-                if ( query != null && query.Password.Equals(user.Password))
+                if ( query != null && query.Password.Equals(model.Password))
                 {
                    
-                    return Ok(user);
+                    return Ok(query);
                 }
                 else
                 {
-                    Console.WriteLine("name of user is" + user.Name);
-                    return Ok(user.Name);
+                    return BadRequest(new { message = "Username or password is incorrect" });
                 }
+            }
+        }
+
+
+        [HttpPost("~/api/registeruser")]
+        public async Task<ActionResult<User>> RegisterUser(RegisterModel model)
+        {
+            await using (var DbContext = new DatabaseContext())
+            {
+                
             }
         }
     }

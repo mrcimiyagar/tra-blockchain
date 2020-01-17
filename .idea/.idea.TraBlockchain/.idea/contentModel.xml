@@ -14,6 +14,31 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ClientApp" t="Include">
+          <e p="build" t="Include">
+            <e p="asset-manifest.json" t="Include" />
+            <e p="favicon.ico" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="manifest.json" t="Include" />
+            <e p="precache-manifest.3d8c28cf080dc8f54a7c6ce0082c1821.js" t="Include" />
+            <e p="service-worker.js" t="Include" />
+            <e p="static" t="Include">
+              <e p="css" t="Include">
+                <e p="main.643429ef.chunk.css" t="Include" />
+                <e p="main.643429ef.chunk.css.map" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="2.5a895c0b.chunk.js" t="Include" />
+                <e p="2.5a895c0b.chunk.js.map" t="Include" />
+                <e p="main.c5164277.chunk.js" t="Include" />
+                <e p="main.c5164277.chunk.js.map" t="Include" />
+                <e p="runtime~main.a8a9905a.js" t="Include" />
+                <e p="runtime~main.a8a9905a.js.map" t="Include" />
+              </e>
+              <e p="media" t="Include">
+                <e p="login.9a76e74e.svg" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="node_modules\@babel\parser" t="IncludeRecursive" />
           <e p="node_modules\@babel\types" t="IncludeRecursive" />
           <e p="node_modules\@emotion\is-prop-valid" t="IncludeRecursive" />
@@ -104,6 +129,8 @@
           <e p="DatabaseContext.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
+          <e p="LoginModel.cs" t="Include" />
+          <e p="RegisterModel.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">

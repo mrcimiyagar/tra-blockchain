@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -34,15 +35,14 @@ namespace TraBlockchain.Controllers
             await using (var dbContext = new DatabaseContext()) 
             {
                 var query = await dbContext.Users
-                    .Where(u => u.Name == model.Name)
+                    .Where(u => u.Email == model.Email)
                     .FirstOrDefaultAsync();
-                
-                if ( query != null && query.Password.Equals(model.Password))
+
+                if (query != null && query.Password.Equals(model.Password))
                 {
-                   
                     return Ok(query);
                 }
-                else
+
                 {
                     return BadRequest(new { message = "Username or password is incorrect" });
                 }
@@ -53,9 +53,33 @@ namespace TraBlockchain.Controllers
         [HttpPost("~/api/registeruser")]
         public async Task<ActionResult<User>> RegisterUser(RegisterModel model)
         {
-            await using (var DbContext = new DatabaseContext())
+            await using (var dbContext = new DatabaseContext())
             {
+                if (model.Name == null || model.Email == null || model.Password == null)
+                {
+                    return BadRequest(new { message = "Incorrect information" });
+                }
                 
+                var queryEmail = await dbContext.Users
+                    .Where(u => u.Email == model.Email)
+                    .FirstOrDefaultAsync();
+
+                if (queryEmail != null)
+                {
+                    return BadRequest(new { message = "There is already an account with this email." });
+                }
+                
+                
+                
+                User user = new User();
+                user.Name = model.Name;
+                user.Email = model.Email;
+                user.Password = model.Password;
+
+                await dbContext.Users.AddAsync(user);
+                await dbContext.SaveChangesAsync();
+                return Ok(user);
+
             }
         }
     }
